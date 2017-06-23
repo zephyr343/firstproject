@@ -9,3 +9,13 @@ def string_reverse():
         break
 
 string_reverse()
+
+-----------------------------
+#random passwod generator
+import random
+
+s = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()"
+
+passlength = 8
+password = "".join(random.sample(s,passlength))
+print(password)
