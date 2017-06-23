@@ -1,0 +1,11 @@
+# prints strings in reverse
+def string_reverse():
+    string = input("Enter in a string: ")
+    teststring = string.split()
+    for i in teststring:
+        reverse = teststring[::-1]
+        list = " ".join(reverse)
+        print(list)
+        break
+
+string_reverse()
