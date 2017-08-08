@@ -19,4 +19,60 @@ s = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()"
 passlength = 8
 password = "".join(random.sample(s,passlength))
 print(password)
-adf
+
+
+# new
+def add(num1, num2):
+
+    return num1 + num2
+# Returns num1 + num2 (comment, not actual execution)
+def sub(num1, num2):
+
+    return num1 - num2
+# Returns num1 - num2
+def mul(num1, num2):
+
+    return num1 * num2
+# Returns num1 * num2
+def div(num1, num2):
+
+    return num1 / num2  # returns a decimal value instead of int value; use int() if want int
+# Returns num1 / num2
+def helloworld():
+    print("Welcome!?")
+def main():
+    validInput = False
+    # check if there is any input
+    while not validInput:
+        # get user input
+        try:
+            num1 = int(input("What is the first number? ")) #int() takes a string and turns it into an integer
+            num2 = int(input("What is the second number? "))
+            """input = scanner class in java"""
+            operation = int(input("what do you want to do? 1)add, 2)subtract, 3)multiply, or 4)divide : "))
+            validInput = True
+        except:
+            # throws exception if the input is not 1-4
+            print("Invalid input, try again.")
+            # catches exception and loops back to first input prompt
+            # use return statement to catch exception and exit program
+
+    # Determine operation
+    if operation == 1:
+        print(add(num1, num2))
+    elif operation == 2:
+        print(sub(num1, num2))
+    elif operation == 3:
+        print(mul(num1, num2))
+    elif operation == 4:
+        print(div(num1, num2))
+    else:
+        print("I don't understand")
+
+
+
+
+helloworld()
+main()
+
+
